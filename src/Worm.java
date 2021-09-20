@@ -17,7 +17,7 @@ public class Worm {
     }
 
     public static boolean match(Worm wormOne, Worm wormTwo) {
-        while (wormOneLife < 0 | wormTwoLife < 0) {
+        while (wormOneLife < 0 || wormTwoLife < 0) {
             Integer attackPoint = 10;
             wormTwoLife = wormTwoLife - damages(attackPoint);
             System.out.print(wormTwoLife);
